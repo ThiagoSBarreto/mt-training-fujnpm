@@ -1,1 +1,19 @@
-<h5 >Farm Selected</h5>
+<h5>Farm Selected</h5>
+<div class="row mt-2">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Farm No</th>
+        <th scope="col">Farm Name</th>
+        <th scope="col">Active Date</th>
+      </tr>
+    </thead>
+    <tbody *ngIf="selectedFarm">
+      <tr>
+        <td>{{ selectedFarm.FarmNo }}</td>
+        <td>{{ selectedFarm.FarmName }}</td>
+        <td>{{ selectedFarm.ActiveDate }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
